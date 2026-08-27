@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lo que quiero que sepas — Duvan & Laurent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carta.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="momentos.html" class="nav-brand">D <span>&amp;</span> L</a>
+    <nav class="nav-links">
+      <a href="momentos.html" class="nav-link">Momentos</a>
+      <a href="galeria.html" class="nav-link">Galería</a>
+      <a href="carta.html" class="nav-link is-active">La Carta</a>
+    </nav>
+  </header>
+
+  <main class="carta-page">
+
+    
+    <h1 class="carta-titulo">Lo que quiero<br>que sepas</h1>
+
+    <div class="sobre-zona">
+      <div class="sobre" id="sobre">
+        <div class="sobre-cuerpo"></div>
+        <div class="sobre-solapa" id="solapa"></div>
+        <div class="sobre-sello">D&amp;L</div>
+      </div>
+      <button class="btn-abrir" id="btnAbrir">Abrir la carta</button>
+    </div>
+
+    <div class="carta-overlay" id="cartaOverlay">
+      <div class="carta" id="carta" role="dialog" aria-label="Carta para Laurent">
+        <button class="btn-cerrar" id="btnCerrar" aria-label="Cerrar carta">×</button>
+
+        <div class="carta-encabezado">
+          <p class="carta-linea"><span>De:</span> Duvan</p>
+          <p class="carta-linea"><span>Para:</span> Laurent Hinestrosa</p>
+        </div>
+
+        <hr class="carta-raya">
+
+        <!--
+          ================================================
+          AQUÍ ESCRIBE EL CONTENIDO DE TU CARTA.
+          Reemplaza este comentario y escribe tu texto dentro
+          del <div class="carta-cuerpo">...</div> de abajo.
+          Puedes usar varios párrafos <p>tu texto</p> si quieres.
+          Este texto ya NO se edita desde la página, solo desde
+          el código, tal como lo pediste.
+          ================================================
+        -->
+        <div class="carta-cuerpo" id="cartaCuerpo">
+<h4>Laurent Alejandra Hinestrosa, tengo muchas cosas que siento pero que no te dije. Solo diré la que me parece muy importante: siempre te he dicho que te quiero mucho, aunque, para ser sincero, lo que siento es más fuerte que un te quiero. Lo que siento por ti no tiene otra palabra más que amar. Yo no creo ni supongo, yo te amo, Laurent, en poco tiempo, sin tanto detalle. No sabes lo duro que me da no poder hablarte, escribirte ni verte... No te hubiera pedido tiempo si hubiera imaginado, antes de decirlo, lo duro que sería para mí y que lo está siendo. Tal vez me dirás que soy muy sentimental contigo, pero he llorado como nunca con solo pensarte, y no porque me ponga mal, tal vez por felicidad, miedo, nostalgia. Dices que Dios hace sus cosas perfectas; lo fueron y son perfectas. Si Dios no quisiera que estuviéramos juntos, tal vez ni nos hubiéramos conocido, o tal vez, con el problema que hubo, me hubiera alejado. Solo sé que son pruebas, y que si esta es una más, podremos superarla. Yo estoy muy comprometido contigo, por lo que te pido lo mismo: respetaré tu ausencia y no intentaré nada con ninguna mujer, seguiré ante todos como el novio de Laurent. Mi propuesta es sencilla, solo elige bien el formulario, jaja.</h4>
+
+        </div>
+
+        <div class="carta-contrato">
+          <p class="contrato-titulo">Antes de cerrar esta carta, un contrato entre los dos:</p>
+          <p class="contrato-pregunta">¿prometes serme fiel, amarme y respetarme por el resto de tu vida?</p>
+
+          <div class="contrato-opciones" id="contratoOpciones">
+            <button class="btn-si" id="btnSi">Sí, acepto</button>
+            <button class="btn-no" id="btnNo">No</button>
+          </div>
+        </div>
+
+        <p class="carta-firma">Con todo mi cariño,<br><span>Duvan</span></p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-caja">
+        <div class="modal-sello">D&amp;L</div>
+        <p class="modal-texto" id="modalTexto"></p>
+        <button class="modal-cerrar" id="modalCerrar">Cerrar</button>
+      </div>
+    </div>
+
+  </main>
+
+<script src="carta.js"></script>
+</body>
+</html>
